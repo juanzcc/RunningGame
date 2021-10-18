@@ -1,0 +1,47 @@
+
+*{
+    padding: 5px;
+    margin: 5px;
+}
+
+#game{
+    width: 650px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#character{
+    width: 40px;
+    height: 60px;
+    background-image: url("img/Idle.png");
+    background-size: 55px;
+    position: relative;
+    top: 130px;
+}
+
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top: 140px;}
+    30%{top: 60px;}
+    70%{top: 60px;}
+    100%{top: 140px;}
+}
+
+#block{
+    width: 30px;
+    height: 45px;
+    background-image: url("img/IdleZombie_invertido.png");
+    background-size: 45px;
+    position: relative;
+    top: 72px;
+    left: 610px;
+    animation: block 3s infinite linear;
+}
+
+@keyframes block{
+    0%{left:610px;}
+    100%{left:-40px;}
+}
